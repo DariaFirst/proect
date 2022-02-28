@@ -7,7 +7,7 @@
     <h2>Новый клиент</h2>
     <br/>
     <asp:Label ID="Label1" runat="server" Text="ФИО:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
-    <asp:TextBox ID="TextBox1" runat="server" Width="300px"></asp:TextBox>
+    <asp:TextBox ID="TextBox1" runat="server" Width="600px"></asp:TextBox>
     <asp:Label ID="Label8" runat="server" Text="*Иванов Иван Иванович"></asp:Label><br/>
     <asp:Label ID="Label2" runat="server" Text="Паспортные данные:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
     <asp:TextBox ID="TextBox2" runat="server" Width="300px"></asp:TextBox>
