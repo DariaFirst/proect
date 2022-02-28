@@ -21,6 +21,7 @@ namespace RielDon
         protected void Button1_Click(object sender, EventArgs e)
         {
             MyConnection.Open();
+<<<<<<< HEAD
             string query = "INSERT INTO [user] ([fio], [passport], [phone], [birthdate]) VALUES (@fio,@passport,@phone,@birthdate);";
             OleDbCommand command = new OleDbCommand(query, MyConnection);
             
@@ -34,5 +35,18 @@ namespace RielDon
             MyConnection.Close();
             GridView1.DataBind();
         }
+=======
+
+
+            //command.ExecuteNonQuery();
+            MyConnection.Close();
+            GridView1.DataBind();
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> e216dacd55eb2da174a08f7c532ea20e2e9eeb04
     }
 }

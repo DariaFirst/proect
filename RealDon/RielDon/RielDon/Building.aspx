@@ -59,6 +59,7 @@
         <asp:ListItem Value="1">Продано</asp:ListItem>
         <asp:ListItem Value="0">Продается</asp:ListItem>
     </asp:DropDownList>
+<<<<<<< HEAD
     <br/>
     <asp:Label ID="Label5" runat="server" Text="Описание:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
     <asp:TextBox ID="TextBox4" runat="server" Width="600px" TextMode="Date" Height="70px"></asp:TextBox>
@@ -66,6 +67,16 @@
     <p><asp:Button ID="Button1" runat="server" Text="Добавить новый объект" OnClick="Button1_Click" /></p>
     <h5>Список объектов</h5>
     <asp:GridView ID="GridView2" runat="server"></asp:GridView>
+=======
+    <br />
+    <br/>
+    <asp:Label ID="Label5" runat="server" Text="Описание:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
+    <asp:TextBox ID="TextBox4" runat="server" Width="700px" Height="100px" TextMode="MultiLine"></asp:TextBox>
+    <br/>
+    <p><asp:Button ID="Button1" runat="server" Text="Добавить новый объект" OnClick="Button1_Click" /></p>
+    <h5>Список объектов</h5>
+    <asp:GridView ID="GridView2" runat="server" DataSourceID="SqlDataSource2"></asp:GridView>
+>>>>>>> e216dacd55eb2da174a08f7c532ea20e2e9eeb04
     <h5>Список клиентов</h5>
     <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id">
         <Columns>

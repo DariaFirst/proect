@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RielDon</RootNamespace>
     <AssemblyName>RielDon</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -53,9 +53,9 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -66,6 +66,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Building.aspx" />
+    <Content Include="Dealing.aspx" />
+    <Content Include="Realtor.aspx" />
     <Content Include="User.aspx" />
     <Content Include="Price.aspx" />
     <Content Include="Account\ChangePassword.aspx" />
@@ -87,6 +90,27 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building.aspx.cs">
+      <DependentUpon>Building.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Building.aspx.designer.cs">
+      <DependentUpon>Building.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dealing.aspx.cs">
+      <DependentUpon>Dealing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dealing.aspx.designer.cs">
+      <DependentUpon>Dealing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Realtor.aspx.cs">
+      <DependentUpon>Realtor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Realtor.aspx.designer.cs">
+      <DependentUpon>Realtor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="User.aspx.cs">
       <DependentUpon>User.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
