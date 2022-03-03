@@ -12,10 +12,3 @@ C:\Users\skvor\OneDrive\Рабочий стол\RielDon\RielDon\obj\Debug\RielDo
 C:\Users\skvor\OneDrive\Рабочий стол\RielDon\RielDon\obj\Debug\RielDon.csproj.CoreCompileInputs.cache
 C:\Users\skvor\OneDrive\Рабочий стол\RielDon\RielDon\obj\Debug\RielDon.dll
 C:\Users\skvor\OneDrive\Рабочий стол\RielDon\RielDon\obj\Debug\RielDon.pdb
-C:\RielDonDB\RielDon\RielDon\RielDon\bin\RielDon.dll.config
-C:\RielDonDB\RielDon\RielDon\RielDon\bin\RielDon.dll
-C:\RielDonDB\RielDon\RielDon\RielDon\bin\RielDon.pdb
-C:\RielDonDB\RielDon\RielDon\RielDon\obj\Debug\RielDon.csprojAssemblyReference.cache
-C:\RielDonDB\RielDon\RielDon\RielDon\obj\Debug\RielDon.csproj.CoreCompileInputs.cache
-C:\RielDonDB\RielDon\RielDon\RielDon\obj\Debug\RielDon.dll
-C:\RielDonDB\RielDon\RielDon\RielDon\obj\Debug\RielDon.pdb

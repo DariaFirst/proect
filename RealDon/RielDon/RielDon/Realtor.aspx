@@ -21,7 +21,49 @@
     <asp:Label ID="Label6" runat="server" Text="*01.01.2000"></asp:Label><br/>
     <p><asp:Button ID="Button1" runat="server" Text="Добавить нового сотрудника" OnClick="Button1_Click" /></p>
     <h5>Список сотрудников</h5>
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowSorting="True" AutoGenerateColumns="False">
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" Width="916px">
+        <Columns>
+            <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
+            <asp:BoundField DataField="fio" HeaderText="ФИО" SortExpression="fio" />
+            <asp:BoundField DataField="phone" HeaderText="Телефон" SortExpression="phone" />
+            <asp:BoundField DataField="dateemployment" HeaderText="Дата приема на работу" SortExpression="dateemployment" />
+            <asp:BoundField DataField="datedismissal" HeaderText="Дата увольнения" SortExpression="datedismissal" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+        </Columns>
     </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConflictDetection="CompareAllValues" ConnectionString="<%$ ConnectionStrings:User %>" DeleteCommand="DELETE FROM [realtor] WHERE [id] = ? AND (([fio] = ?) OR ([fio] IS NULL AND ? IS NULL)) AND (([phone] = ?) OR ([phone] IS NULL AND ? IS NULL)) AND (([dateemployment] = ?) OR ([dateemployment] IS NULL AND ? IS NULL)) AND (([datedismissal] = ?) OR ([datedismissal] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [realtor] ([id], [fio], [phone], [dateemployment], [datedismissal]) VALUES (?, ?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:User.ProviderName %>" SelectCommand="SELECT * FROM [realtor]" UpdateCommand="UPDATE [realtor] SET [fio] = ?, [phone] = ?, [dateemployment] = ?, [datedismissal] = ? WHERE [id] = ? AND (([fio] = ?) OR ([fio] IS NULL AND ? IS NULL)) AND (([phone] = ?) OR ([phone] IS NULL AND ? IS NULL)) AND (([dateemployment] = ?) OR ([dateemployment] IS NULL AND ? IS NULL)) AND (([datedismissal] = ?) OR ([datedismissal] IS NULL AND ? IS NULL))">
+        <DeleteParameters>
+            <asp:Parameter Name="original_id" Type="Int32" />
+            <asp:Parameter Name="original_fio" Type="String" />
+            <asp:Parameter Name="original_fio" Type="String" />
+            <asp:Parameter Name="original_phone" Type="String" />
+            <asp:Parameter Name="original_phone" Type="String" />
+            <asp:Parameter Name="original_dateemployment" Type="DateTime" />
+            <asp:Parameter Name="original_dateemployment" Type="DateTime" />
+            <asp:Parameter Name="original_datedismissal" Type="DateTime" />
+            <asp:Parameter Name="original_datedismissal" Type="DateTime" />
+        </DeleteParameters>
+        <InsertParameters>
+            <asp:Parameter Name="id" Type="Int32" />
+            <asp:Parameter Name="fio" Type="String" />
+            <asp:Parameter Name="phone" Type="String" />
+            <asp:Parameter Name="dateemployment" Type="DateTime" />
+            <asp:Parameter Name="datedismissal" Type="DateTime" />
+        </InsertParameters>
+        <UpdateParameters>
+            <asp:Parameter Name="fio" Type="String" />
+            <asp:Parameter Name="phone" Type="String" />
+            <asp:Parameter Name="dateemployment" Type="DateTime" />
+            <asp:Parameter Name="datedismissal" Type="DateTime" />
+            <asp:Parameter Name="original_id" Type="Int32" />
+            <asp:Parameter Name="original_fio" Type="String" />
+            <asp:Parameter Name="original_fio" Type="String" />
+            <asp:Parameter Name="original_phone" Type="String" />
+            <asp:Parameter Name="original_phone" Type="String" />
+            <asp:Parameter Name="original_dateemployment" Type="DateTime" />
+            <asp:Parameter Name="original_dateemployment" Type="DateTime" />
+            <asp:Parameter Name="original_datedismissal" Type="DateTime" />
+            <asp:Parameter Name="original_datedismissal" Type="DateTime" />
+        </UpdateParameters>
+    </asp:SqlDataSource>
 </asp:Content>

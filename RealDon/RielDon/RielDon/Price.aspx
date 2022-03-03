@@ -96,6 +96,20 @@
         </asp:TableRow>
     </asp:Table>
     <p>Результаты поиска...</p>
-    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True" Width="1200px">
+        <Columns>
+            <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" SortExpression="id" />
+            <asp:BoundField DataField="address" HeaderText="Адрес" SortExpression="address" />
+            <asp:BoundField DataField="fio" HeaderText="Собственник" SortExpression="fio" />
+            <asp:BoundField DataField="region" HeaderText="Район" SortExpression="region" />
+            <asp:BoundField DataField="objecttype" HeaderText="Тип" SortExpression="objecttype" />
+            <asp:BoundField DataField="compactness" HeaderText="Компактность" SortExpression="compactness" />
+            <asp:BoundField DataField="floor" HeaderText="Этаж" SortExpression="floor" />
+            <asp:BoundField DataField="price" HeaderText="Цена" SortExpression="price" />
+            <asp:CheckBoxField DataField="status" HeaderText="Статус" SortExpression="status" />
+            <asp:BoundField DataField="description" HeaderText="Описание" SortExpression="description" />
+        </Columns>
+    </asp:GridView>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:User %>" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:User.ProviderName %>" SelectCommand="SELECT * FROM [Z2]">
+    </asp:SqlDataSource>
 </asp:Content>

@@ -20,14 +20,14 @@
     <asp:Label ID="Label6" runat="server" Text="*01.01.2000"></asp:Label><br/>
     <p><asp:Button ID="Button1" runat="server" Text="Добавить нового пользователя" OnClick="Button1_Click" /></p>
     <h5>Список клиентов</h5>
-    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id">
+    <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="id" Width="1193px">
         <Columns>
-            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             <asp:BoundField DataField="id" HeaderText="id" InsertVisible="False" ReadOnly="True" SortExpression="id" />
-            <asp:BoundField DataField="fio" HeaderText="fio" SortExpression="fio" />
-            <asp:BoundField DataField="passport" HeaderText="passport" SortExpression="passport" />
-            <asp:BoundField DataField="phone" HeaderText="phone" SortExpression="phone" />
-            <asp:BoundField DataField="birthdate" HeaderText="birthdate" SortExpression="birthdate" />
+            <asp:BoundField DataField="fio" HeaderText="ФИО" SortExpression="fio" />
+            <asp:BoundField DataField="passport" HeaderText="Паспортные данные" SortExpression="passport" />
+            <asp:BoundField DataField="phone" HeaderText="Телефон" SortExpression="phone" />
+            <asp:BoundField DataField="birthdate" HeaderText="Дата рождения" SortExpression="birthdate" />
+            <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:User %>" DeleteCommand="DELETE FROM [user] WHERE [id] = ? AND (([fio] = ?) OR ([fio] IS NULL AND ? IS NULL)) AND (([passport] = ?) OR ([passport] IS NULL AND ? IS NULL)) AND (([phone] = ?) OR ([phone] IS NULL AND ? IS NULL)) AND (([birthdate] = ?) OR ([birthdate] IS NULL AND ? IS NULL))" InsertCommand="INSERT INTO [user] ([id], [fio], [passport], [phone], [birthdate]) VALUES (?, ?, ?, ?, ?)" OldValuesParameterFormatString="original_{0}" ProviderName="<%$ ConnectionStrings:User.ProviderName %>" SelectCommand="SELECT * FROM [user]" UpdateCommand="UPDATE [user] SET [fio] = ?, [passport] = ?, [phone] = ?, [birthdate] = ? WHERE [id] = ? AND (([fio] = ?) OR ([fio] IS NULL AND ? IS NULL)) AND (([passport] = ?) OR ([passport] IS NULL AND ? IS NULL)) AND (([phone] = ?) OR ([phone] IS NULL AND ? IS NULL)) AND (([birthdate] = ?) OR ([birthdate] IS NULL AND ? IS NULL))" ConflictDetection="CompareAllValues">
