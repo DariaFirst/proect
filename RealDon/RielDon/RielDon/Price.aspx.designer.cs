@@ -60,6 +60,15 @@ namespace RielDon
         protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
+        /// TextBox6 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox6;
+
+        /// <summary>
         /// Table2 элемент управления.
         /// </summary>
         /// <remarks>
@@ -112,6 +121,15 @@ namespace RielDon
         /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
+
+        /// <summary>
+        /// Button2 элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически созданное поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
         /// GridView1 элемент управления.

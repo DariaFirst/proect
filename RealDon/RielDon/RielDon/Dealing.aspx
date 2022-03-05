@@ -23,16 +23,13 @@
     <asp:Label ID="Label5" runat="server" Text="Итоговая стоимость:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
     <asp:TextBox ID="TextBox4" runat="server" Width="300px" Enabled="False"></asp:TextBox>
     <asp:Label ID="Label6" runat="server" Text="*число"></asp:Label>
-    <asp:Button ID="Button2" runat="server" Text="Расчитать" />
+    <asp:Button ID="Button2" runat="server" Text="Расчитать" OnClick="Button2_Click" />
     <br />
     <asp:Label ID="Label12" runat="server" Text="Дата сделки:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
     <asp:TextBox ID="TextBox5" runat="server" Width="300px" TextMode="Date"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label11" runat="server" Text="Докумены:&nbsp;&nbsp;" Font-Size="Medium"></asp:Label>
-    <asp:FileUpload ID="FileUpload1" runat="server" Width="448px" />
     <br/>
     <p><asp:Button ID="Button1" runat="server" Text="Добавить новую сделку" OnClick="Button1_Click" Enabled="False" /></p>
-    <h5>Список сделок</h5><asp:Button ID="Button3" runat="server" Text="Обновить" />
+    <h5>Список сделок</h5><asp:Button ID="Button3" runat="server" Text="Обновить" OnClick="Button3_Click" />
         
     <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource5" AllowSorting="True" AutoGenerateColumns="False" Width="1300px">
         <Columns>

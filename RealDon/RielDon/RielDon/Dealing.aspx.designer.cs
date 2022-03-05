@@ -195,24 +195,6 @@ namespace RielDon
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
 
         /// <summary>
-        /// Label11 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label11;
-
-        /// <summary>
-        /// FileUpload1 элемент управления.
-        /// </summary>
-        /// <remarks>
-        /// Автоматически созданное поле.
-        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
-
-        /// <summary>
         /// Button1 элемент управления.
         /// </summary>
         /// <remarks>
