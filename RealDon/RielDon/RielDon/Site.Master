@@ -26,7 +26,7 @@
                         <asp:MenuItem NavigateUrl="~/User.aspx" Text="Новый клиент"/>
                         <asp:MenuItem NavigateUrl="~/Building.aspx" Text="Новый объект"/>
                         <asp:MenuItem NavigateUrl="~/Realtor.aspx" Text="Риелторы"/>
-                        <asp:MenuItem NavigateUrl="~/Dealing.aspx" Text="Сделка"/>
+                        <asp:MenuItem NavigateUrl="~/Dealing.aspx" Text="Новая сделка"/>
                     </Items>
                 </asp:Menu>
             </div>
