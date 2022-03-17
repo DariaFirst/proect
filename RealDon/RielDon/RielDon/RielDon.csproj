@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RielDon</RootNamespace>
     <AssemblyName>RielDon</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Building.aspx" />
+    <Content Include="DealingNew.aspx" />
     <Content Include="Dealing.aspx" />
     <Content Include="Realtor.aspx" />
     <Content Include="User.aspx" />
@@ -96,6 +97,13 @@
     </Compile>
     <Compile Include="Building.aspx.designer.cs">
       <DependentUpon>Building.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DealingNew.aspx.cs">
+      <DependentUpon>DealingNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DealingNew.aspx.designer.cs">
+      <DependentUpon>DealingNew.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dealing.aspx.cs">
       <DependentUpon>Dealing.aspx</DependentUpon>

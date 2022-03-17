@@ -38,6 +38,7 @@ namespace RielDon
             command.ExecuteNonQuery();
             MyConnection.Close();
             GridView1.DataBind();
+            GridView2.DataBind();
         }
 
         protected void Button3_Click(object sender, EventArgs e)
